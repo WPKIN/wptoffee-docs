@@ -1,0 +1,309 @@
+.wptoffeedocs-search-wrap {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  .wptoffeedocs-search-label {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 150px;
+    line-height: 56px;
+
+    label {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #5C637E;
+	  margin: 20px 0 40px 0;
+    }
+  }
+
+  .wptoffeedocs-search-form {
+    background: #FFF;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid #ddd;
+    margin-bottom: 50px;
+  }
+
+
+  .wptoffeedocs-category-select {
+    margin-right: 20px;
+    max-width: 180px;
+    border-color: transparent;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #5C637E;
+    border-radius: 0;
+    border-left: 1px solid #D3D9EF;
+    padding-left: 15px;
+
+    &:focus,
+    &:focus-visible {
+      box-shadow: none;
+      outline: none;
+      border: none;
+    }
+
+  }
+
+  .wptoffeedocs-search-submit {
+    border-radius: 10px;
+    background: linear-gradient(90deg, #018cff, #01abff);
+    font-weight: 500;
+    font-size: 1rem;
+    min-height: 40px;
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+
+    path,
+    circle {
+      stroke: #fff;
+    }
+
+    &:focus {
+      box-shadow: none;
+      border-color: transparent;
+    }
+  }
+
+  .wptoffeedocs-search-field {
+    border: none;
+    margin-right: auto;
+    flex: 1;
+
+    &-wrap {
+      margin-right: auto;
+      flex: 1;
+      margin-left: 15px;
+      display: flex;
+      align-items: center;
+
+      .wptoffeedocs-search-close {
+        margin-right: 10px;
+        cursor: pointer;
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
+
+      .wptoffeedocs-search-loader {
+        margin-right: 10px;
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
+    }
+
+    &:focus {
+      box-shadow: none;
+      border-color: transparent;
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #979797;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+
+
+  }
+
+  .wptoffeedocs-search-results {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 1px solid #f1f1f1;
+    min-width: 300px;
+    position: absolute;
+    top: auto;
+    margin: 15px 0 0;
+    padding: 0;
+    list-style: none;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 999;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    &-wrap {
+      position: absolute;
+      z-index: 9999;
+      width: 100%;
+      left: 0;
+      bottom: 2px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 100px;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #FFF;
+        z-index: 9999;
+      }
+
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+
+  }
+
+  .wptoffeedocs-search-item {
+    padding: 15px;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #f1f1f1;
+    }
+
+    .wptoffeedocs-search-item-title {
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #333333;
+      margin-bottom: 0;
+    }
+
+    .wptoffeedocs-search-item-category {
+      font-weight: 400;
+      font-size: .875rem;
+      line-height: 150%;
+      color: #5C637E;
+    }
+  }
+
+  @media(max-width: 767.98px) {
+    .wptoffeedocs-search-field-wrap {
+      margin-left: 0;
+    }
+
+    .wptoffeedocs-search-label {
+      margin-top: 0px;
+      margin-bottom: 0;
+
+      label {
+        font-size: 1.5rem;
+      }
+      p {
+        margin: 20px 5px;
+        font-size: .9rem;
+      }
+    }
+
+    .wptoffeedocs-search-form {
+      padding: 6px 4px;
+      margin: 0 13px;
+      width: 97%;
+      border: 1px solid #ddd;
+    }
+
+    .wptoffeedocs-search-field {
+      margin-left: 0px;
+      text-overflow: ellipsis;
+      font-size: 17px;
+      padding-left: 5px;
+    }
+
+    .wptoffeedocs-category-select {
+      max-width: 140px;
+      width: 140px;
+      margin-right: 10px;
+      font-size: 0.95rem;
+      // right: 31px;
+      // margin: 0 3px;
+      // position: absolute;
+      padding-left: 0;
+
+    }
+
+    .wptoffeedocs-search-submit {
+      padding: 7px 5px;
+      font-size: .8rem;
+      margin-right: 1px;
+
+      svg {
+        width: 14px;
+        height: 14px;
+        margin-right: 2px;
+      }
+      // span {
+      //   display: none;
+      // }
+    }
+  }
+  @media(max-width: 410px) {
+    .wptoffeedocs-search-field {
+      margin-left: 0px;
+      text-overflow: ellipsis;
+      font-size: 17px;
+      padding-left: 5px;
+      flex: none;
+      width: 150px;
+    }
+
+    .wptoffeedocs-category-select {
+      max-width: 111px;
+      width: 106px;
+      margin-right: 0px;
+      font-size: 0.95rem;
+      text-overflow: ellipsis;
+      right: 50px;
+      margin: 0 3px;
+      position: absolute;
+      padding-left: 0;
+
+    }
+    .wptoffeedocs-search-submit {
+      padding: 0px 13px;
+      font-size: .8rem;
+      margin-right: 1px;
+
+      svg {
+        width: 14px;
+        height: 14px;
+        margin-right: 2px;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+}

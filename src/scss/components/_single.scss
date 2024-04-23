@@ -1,0 +1,203 @@
+.wptoffeedocs-content-area {
+  padding: 30px 25px;
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  align-items: flex-start;
+  @media(max-width: 767.98px) {
+    display: block;
+    padding-top:0;
+  }
+}
+
+.wptoffeedocs-single-main {
+  background-color: #fff;
+ // border: 1px solid #3b3f5321;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 7px;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  flex: 1;
+
+  .wptoffeedocs-entry-header {
+    .wptoffeedocs-entry-title {
+      color: #5C637E;
+      line-height: 2.5rem;
+      font-size: 30px;
+    }
+  }
+
+  .wptoffeedocs-entry-content {
+    img {
+      max-width: 100%;
+      height: auto;
+      margin:10px auto;
+      border-radius: 7px;
+      border: 1px solid #ede8e8;
+      //border-radius: 20px;
+      //box-shadow: 0px 3px 8px rgba(170, 170, 170, 0.2);
+      margin-top: 30px;
+    }
+    .ratio {
+      margin-top:20px;
+      
+    }
+    iframe {
+      border-radius: 7px;
+      box-shadow: 0px 3px 8px rgba(170, 170, 170, 0.2);
+    }
+    h3 {
+      padding-top: 24px;
+      padding-bottom: 10px;
+      span{
+        b{
+          color: #000;
+        }
+      }
+    }
+    ul{
+      li{
+        //margin-bottom: 3px !important;
+        color:#5c637e;
+        font-size: 18px;
+        line-height: var(--bs-body-line-height);
+        strong {
+          color: #000;
+        }
+      }
+
+    }
+   
+    p {
+     font-size:18px;
+     margin-bottom: 3px !important;
+    }
+    h2{
+      margin-top:20px;
+      margin-bottom: 10px;
+    }
+   
+  }
+
+  .wptoffeedocs-feedback {
+    padding: 15px 20px;
+    background: #F0F4FF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+
+    span {
+      font-size: 1.1rem;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+    }
+  }
+
+  .wptoffeedocs-entry-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 100px;
+
+    .support-link {
+      display: flex;
+      align-items: center;
+
+      svg {
+        background-color: #E5EDFF;
+        margin-right: 10px;
+        color: $link-color;
+        border-radius: 50px;
+        padding: 7px;
+        width: 40px;
+        height: 40px;
+      }
+
+      span {
+        color: #5C637E;
+      }
+
+      a {
+        font-weight: 600;
+        font-size: 1rem;
+        color: $link-color;
+        margin-left: 10px;
+      }
+
+    }
+    .update-date {
+      svg {
+        background-color: #E5EDFF;
+        margin-right: 10px;
+        color: $link-color;
+        border-radius: 50px;
+        padding: 7px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  @media(max-width: 767.98px) {
+   margin-top: 30px;
+   margin-left: 0;
+
+   .wptoffeedocs-entry-title {
+    font-size: 2rem;
+   }
+   .wptoffeedocs-entry-content {
+    p {
+      font-size: .9rem;
+    }
+   }.wptoffeedocs-feedback {
+    span {
+      font-size: .9rem;
+    }
+  }
+  .wptoffeedocs-entry-footer {
+    flex-direction: column;
+    align-items: start;
+    .update-date {
+      margin-top: 15px;
+    }
+  }
+  }
+  @media(max-width: 991.98px) {
+
+   .wptoffeedocs-entry-title {
+    font-size: 2rem;
+   }
+   .wptoffeedocs-entry-content {
+    p {
+      font-size: .9rem;
+    }
+   }.wptoffeedocs-feedback {
+    span {
+      font-size: .9rem;
+    }
+  }
+  .wptoffeedocs-entry-footer {
+    flex-direction: column;
+    align-items: start;
+    .update-date {
+      margin-top: 15px;
+    }
+  }
+  }
+
+}
+

@@ -1,0 +1,46 @@
+.wptoffeedocs-breadcrumb {
+  margin-bottom: 20px;
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-flow: row wrap;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      line-height: 1.7;
+
+      a {
+        color: $link-color;
+        text-decoration: none;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+      }
+
+      &:not(:last-child):after {
+        content: "/";
+        margin: 0 10px;
+        color: #5c637e;
+      }
+
+      &:last-child {
+        overflow: hidden;
+        flex: 1;
+
+        a {
+          color: #5c637e;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          display: block;
+        }
+      }
+    }
+  }
+}

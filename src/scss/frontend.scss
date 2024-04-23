@@ -1,0 +1,19 @@
+/*
+* Author          : WPToffee
+* Version         : 1.1.1
+* Url             : http://wptoffee.com/
+*/
+
+// variables
+$primary-color: #0182FF;
+$link-color: #0185FF;
+
+@import "components/variables";
+
+@import "components/search-form";
+@import "components/sidebar";
+@import "components/breadcrumb";
+
+@import "components/docs";
+@import "components/archive";
+@import "components/single";

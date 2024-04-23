@@ -1,0 +1,50 @@
+{
+  "name": "wptoffee-docs",
+  "version": "1.0.0",
+  "description": "Completed:\r ---\r 1.",
+  "main": "index.js",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardmallick/reader-mode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richardmallick/reader-mode/issues"
+  },
+  "homepage": "https://github.com/richardmallick/reader-mode#readme",
+  "scripts": {
+    "start": "gulp",
+    "build": "wp i18n make-pot ./ languages/reader-mode.pot --exclude='/freemius,/src,/vendors' && gulp build --prod"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/register": "^7.17.7",
+    "babel-loader": "^8.2.5",
+    "browser-sync": "^2.27.9",
+    "css-loader": "^6.7.1",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-checktextdomain": "^2.2.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-zip": "^5.1.0",
+    "replace-in-file-webpack-plugin": "^1.0.6",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "script-loader": "^0.7.2",
+    "style-loader": "^3.3.1",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^7.0.0",
+    "yargs": "^17.4.1"
+  },
+  "dependencies": {
+  }
+}

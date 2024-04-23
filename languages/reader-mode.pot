@@ -1,0 +1,166 @@
+# Copyright (C) 2023 WPToffeeLab
+# This file is distributed under the same license as the WPToffee Docs plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPToffee Docs 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wptoffee-docs\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-05-14T03:23:06+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: wptoffee-docs\n"
+
+#. Plugin Name of the plugin
+msgid "WPToffee Docs"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wptoffeelabbd.com/wptoffee-docs/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Documentation & Knowledge Base Plugin"
+msgstr ""
+
+#. Author of the plugin
+msgid "WPToffeeLab"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wptoffeelabbd.com/"
+msgstr ""
+
+#: includes/class-cpt.php:24
+msgctxt "post type general name"
+msgid "Doc"
+msgstr ""
+
+#: includes/class-cpt.php:25
+msgctxt "post type singular name"
+msgid "Doc"
+msgstr ""
+
+#: includes/class-cpt.php:26
+msgctxt "admin menu"
+msgid "Docs"
+msgstr ""
+
+#: includes/class-cpt.php:27
+msgctxt "add new on admin bar"
+msgid "Doc"
+msgstr ""
+
+#: includes/class-cpt.php:28
+msgctxt "doc"
+msgid "Add New"
+msgstr ""
+
+#: includes/class-cpt.php:29
+msgid "Add New Doc"
+msgstr ""
+
+#: includes/class-cpt.php:30
+msgid "New Doc"
+msgstr ""
+
+#: includes/class-cpt.php:31
+msgid "Edit Doc"
+msgstr ""
+
+#: includes/class-cpt.php:32
+msgid "View Doc"
+msgstr ""
+
+#: includes/class-cpt.php:33
+msgid "All Docs"
+msgstr ""
+
+#: includes/class-cpt.php:34
+msgid "Search Docs"
+msgstr ""
+
+#: includes/class-cpt.php:35
+msgid "Parent Docs:"
+msgstr ""
+
+#: includes/class-cpt.php:36
+msgid "No docs found."
+msgstr ""
+
+#: includes/class-cpt.php:37
+msgid "No docs found in Trash."
+msgstr ""
+
+#: includes/class-cpt.php:42
+msgid "Description."
+msgstr ""
+
+#: includes/class-cpt.php:62
+msgctxt "taxonomy general name"
+msgid "Doc Categories"
+msgstr ""
+
+#: includes/class-cpt.php:63
+msgctxt "taxonomy singular name"
+msgid "Doc Category"
+msgstr ""
+
+#: includes/class-cpt.php:64
+msgid "Search Doc Categories"
+msgstr ""
+
+#: includes/class-cpt.php:65
+msgid "All Doc Categories"
+msgstr ""
+
+#: includes/class-cpt.php:66
+msgid "Parent Doc Category"
+msgstr ""
+
+#: includes/class-cpt.php:67
+msgid "Parent Doc Category:"
+msgstr ""
+
+#: includes/class-cpt.php:68
+msgid "Edit Doc Category"
+msgstr ""
+
+#: includes/class-cpt.php:69
+msgid "Update Doc Category"
+msgstr ""
+
+#: includes/class-cpt.php:70
+msgid "Add New Doc Category"
+msgstr ""
+
+#: includes/class-cpt.php:71
+msgid "New Doc Category Name"
+msgstr ""
+
+#: includes/class-cpt.php:72
+msgid "Doc Category"
+msgstr ""
+
+#: includes/class-cpt.php:90
+#: includes/class-cpt.php:109
+#: includes/class-cpt.php:151
+msgid "Image"
+msgstr ""
+
+#: includes/class-cpt.php:96
+#: includes/class-cpt.php:121
+msgid "Add Image"
+msgstr ""
+
+#: includes/class-cpt.php:98
+#: includes/class-cpt.php:123
+msgid "Remove Image"
+msgstr ""
+
+#: plugin.php:15
+msgid "You can't access this page"
+msgstr ""

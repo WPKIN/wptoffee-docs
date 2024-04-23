@@ -1,0 +1,202 @@
+.wptoffeedocs-wrap {
+  width: 100%;
+
+  .wptoffeedocs-archive-main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    .wptoffeedocs-cat {
+      background-color: #fff;
+      border: 1px solid #3b3f5321;
+      width: calc(33.33% - 40px);
+      margin: 20px;
+      border-radius: 20px;
+      padding-bottom: 30px;
+
+      &-title {
+        border-bottom: 2px solid $primary-color;
+        padding: 20px;
+
+        a {
+          color: #5c637e;
+          font-size: 16px;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+
+          img {
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+            border-radius: 5px;
+          }
+
+          .docs-count {
+            margin-left: auto;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            background-color: $primary-color;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50px;
+          }
+        }
+      }
+
+      .docs-list {
+        padding: 15px;
+
+        &-item {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          color: #5C637E;
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: 10px;
+
+          img {
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+
+      &-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        text-decoration: none;
+        color: $primary-color;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+        border: 1px solid #E5EDFF;
+        border-radius: 10px;
+        padding: 10px 25px;
+        width: max-content;
+        transition: all linear .3s;
+
+        &:hover {
+          color: #fff;
+          background-color: $link-color;
+          transition: all linear .3s;
+        }
+      }
+    }
+  }
+
+  .docs-list {
+    padding: 15px;
+
+    &-item {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: #5C637E;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 15px;
+      line-height: 1.5;
+
+      img {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+      }
+
+      &:hover,
+      &.active {
+        color: $link-color;
+      }
+
+    }
+  }
+
+  @media(min-width: 1200px) {
+    .wptoffeedocs-archive-main {
+      .wptoffeedocs-cat {
+        width: 22%;
+      }
+    }
+  }
+
+
+  @media(max-width: 767.98px) {
+    .wptoffeedocs-archive-main {
+      justify-content: center;
+
+      .wptoffeedocs-cat {
+        width: 43%;
+      }
+    }
+  }
+
+  @media(max-width: 600px) {
+    .wptoffeedocs-archive-main {
+
+
+      .wptoffeedocs-cat {
+        width: 90%;
+      }
+    }
+  }
+
+  @media(max-width: 991.98px) {
+    padding-top: 0px !important;
+
+    .wptoffeedocs-archive-main {
+
+      .wptoffeedocs-cat {
+
+        &-title {
+          padding: 11px;
+
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+
+    }
+
+    .docs-list {
+
+      &-item {
+        font-size: 13px;
+
+      }
+    }
+  }
+
+  @media(max-width: 767.98px) {
+    padding-top: 80px !important;
+  }
+
+}
+
+.archive{
+  .wptoffeedocs-wrap{
+    .docs-list{
+      padding: 0;
+    }
+  }
+}
+
+.single-docs{
+  .wptoffeedocs-wrap{
+    .docs-list{
+      padding: 0;
+    }
+  }
+}

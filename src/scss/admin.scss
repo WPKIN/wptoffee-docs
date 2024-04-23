@@ -1,0 +1,14 @@
+#category-image-wrapper {
+  img {
+    width: 60px;
+    height: auto;
+  }
+}
+
+.wptoffeedocs_tax_media_remove {
+  display: none !important;
+
+  &.show {
+    display: inline-block !important;
+  }
+}
